@@ -224,15 +224,15 @@ span{
     border: 2px solid var(--main-color);
     border-radius: 1rem;
     padding: 1rem;
-    width: 30% !important;
-    height: 50% !important;
+    width: 100% !important;
+    height: 90% !important;
     overflow: hidden;
     
 }
 
 .card img{
     width: 100%;
-    height: 100%;
+    height: 43%;
     object-fit: cover;
 }
 
@@ -262,10 +262,11 @@ span{
 }
 
 .project-container{
-    display: flex;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 5rem;
-    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
 }
 
 
@@ -715,4 +716,158 @@ background: var(--snd-bg-color);
     }
 }
 
+@media (max-width: 768px) {
+    .btn {
+        padding: 0.8rem 1.6rem;
+        margin: 0.5rem;
+        font-size: 1.4rem;
+    }
+}
 
+@media (max-width: 576px) {
+    .btn {
+        padding: 0.7rem 1.4rem;
+        margin: 0.4rem;
+        font-size: 1.3rem;
+        width: 70%;
+    }
+}
+
+@media (max-width: 480px) {
+    .btn {
+        padding: 0.6rem 1.2rem;
+        margin: 0.3rem;
+        font-size: 1.2rem;
+        width: 70%;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .project-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .card {
+        width: 95%;
+        max-width: none;
+        margin: 0 auto;
+    }
+
+    .card img {
+        max-height: 95%;
+    }
+}
+
+@media (max-width: 576px) {
+    .project-container {
+        width: 100%;
+        gap: 1.25rem;
+    }
+
+    .card {
+        width: 90%;
+        height: 95%;
+        margin: 0 auto;
+    }
+
+    .card img {
+        max-height: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .project-container {
+        gap: 1.5rem;
+    }
+
+    .card {
+        width: 85%;
+        height: 90%;
+        margin: 0 auto;
+    }
+
+    .card img {
+        max-height: 85%;
+    }
+}
+
+
+#menu-icon {
+    font-size: 3.6rem;
+    color: var(--text-color);
+    display: none;
+    cursor: pointer;
+}
+
+/* On smaller screens, show the hamburger icon and hide the nav links */
+@media (max-width: 768px) {
+    #menu-icon {
+        display: block;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 3%;
+        background: var(--bg-color);
+        border-top: .1rem solid rgba(0, 0, 0, .2);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+        max-height: 0;
+        overflow: hidden;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        transition: max-height 0.5s ease-out, padding 0.5s ease-out;
+        width: 100%;
+    }
+
+    .navbar.active {
+        max-height: 370px; /* Adjust this value based on your content */
+        padding: 1rem 3%;
+    }
+
+    .navbar a {
+        opacity: 0;
+        transition: opacity 0.3s ease-out;
+    }
+
+    .navbar.active a {
+        opacity: 1;
+    }
+
+    .navbar a {
+        opacity: 1;
+        transition: opacity 0.3s ease-out;
+    }
+
+    .navbar a:active,
+    .navbar a:focus {
+        opacity: 1;
+    }
+
+    .navbar a:hover {
+        color: var(--main-color);
+    }
+
+    .navbar a.active {
+        color: var(--main-color);
+    }
+
+    .navbar.active {
+        display: block;
+    }
+
+    .navbar a {
+        display: block;
+        font-size: 1.7rem;
+        margin: 1.5rem 0;
+    }
+}

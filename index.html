@@ -14,16 +14,17 @@
     <!-- navbar design -->
     <header class="header">
         <a href="#" class="logo">Portfolio</a>
-        <i class="fa-solid fa-bars" id="menu-icon"></i>
-        <nav class="navbar">
-            <a href="#home" class="active">Home</a>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#services">Services</a>
-            <a href="#projects">Projects</a>
-            <a href="#contacts">Contact</a>
-        </nav>
-    </header>
+          <div id="menu-icon" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></div>
+          <nav class="navbar">
+              <a href="#home" class="active">Home</a>
+              <a href="#about">About</a>
+              <a href="#skills">Skills</a>
+              <a href="#services">Services</a>
+              <a href="#projects">Projects</a>
+              <a href="#contacts">Contact</a>
+          </nav>
+      </header>
+    
 
       <section id="home">
         <div class="home-container">
@@ -40,7 +41,7 @@
                     <a href="https://github.com/Atulkhiyani0909" target="_blank"><i class="fa-brands fa-github"></i></a>
                   </div>
                   <a href="https://leetcode.com/u/atulkhiyani09/" target="_blank" class="btn">LeetCode</a>
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="atul_resume.docx" class="btn" download>Download CV</a>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://docs.google.com/document/d/1PJw7oYwmTnfIcuGoxI_dI5vurikCSzSF/edit" target="_blank" class="btn" download>Download CV</a>
         </div>  
             <div class="home-img">
                 <img src="./files/tJYLSQo9dq46uA2xgs0AO-transformed.png" alt="profile" class="img-fluid">
@@ -155,10 +156,10 @@
               <div class="card" style="width: 18rem;">
                 <img src="./files/Screenshot (7).png" class="card-img-top" alt="portfolio">
                 <div class="card-body">
-                  <br><br><br><br><br>
+                       
                   <h5 class="card-title">Portfolio Website</h5>
                   <p class="card-text">This is my portfolio website. It is a simple  website that showcases my skills and projects.</p>
-                  <br><br><br><br><br><br><br><br><br><br>
+                 
                   <a href="https://github.com/Atulkhiyani0909/Portfolio"  target="_blank" class="btn btn-primary">Project Link</a>
                 </div>
               </div>
@@ -177,11 +178,11 @@
               <div class="card" style="width: 18rem;">
                 <img src="./files/Screenshot (9).png" class="card-img-top" alt="portfolio">
                 <div class="card-body">
-                  <br><br><br><br><br>
+                  
                   <h5 class="card-title">Wanderlust</h5>
                   <span>Upcoming Project !!</span>
                   <p class="card-text">Working on a project called "Wanderlust," a platform for property listings. In this application, I’ve implemented user authentication for secure login, allowing users to create and manage their profiles. The app features a comprehensive database to store property information, enabling users to review, edit, and delete listings. Additionally, I’ve included a search functionality that allows users to find properties by country, enhancing the overall user experience.</p>
-                  <br><br><br><br><br><br><br><br>
+                  
                   <a href="https://github.com/Atulkhiyani0909" class="btn btn-primary">Project Link</a>
                 </div>
               </div>
@@ -197,14 +198,13 @@
                 </div>
               </div>
         </div>
-  </div>
     </section>
 
     <!-- contacts section -->
     <section id="contacts" class="contacts">
         <h2 class="heading">Contact <span>Me</span></h2>
         <div class="form-container">
-            <form action="">
+            <form action="" method="post">
                 <div class="form-group">
                     <label for="first-name">First Name <span>*</span ></label>
                     <input type="text" name="firstName" placeholder="First Name" >
