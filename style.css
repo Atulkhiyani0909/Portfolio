@@ -912,12 +912,12 @@ background: var(--snd-bg-color);
 
 /* Style for contact info */
 .contact-info h3 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     margin-bottom: 1rem;
 }
 
 .contact-info p {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     margin-bottom: 0.5rem;
 }
 
@@ -938,8 +938,5 @@ background: var(--snd-bg-color);
     
 }
 
-@media (min-width: 768px) {
-    .contact-form {
-        padding-right: 2rem;
-    }
-}
+/* Style for contact info on small screens */
+
