@@ -940,3 +940,34 @@ background: var(--snd-bg-color);
 
 /* Style for contact info on small screens */
 
+
+
+.typewriter {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.cursor {
+    display: inline-block;
+    margin-left: 5px;
+    opacity: 1;
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+h3{
+    color: #fff;
+}
