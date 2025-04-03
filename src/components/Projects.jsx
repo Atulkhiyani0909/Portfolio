@@ -10,7 +10,7 @@ const projects = [
     description: 'WanderLust is an intuitive property listing website that enables users to explore, rate, and comment on various properties. Users can view property details, leave reviews, and check property locations directly on an interactive map. Whether searching for a new home or just browsing, WanderLust provides a user-friendly experience to discover and engage with listed properties',
     image:wanderLust,
     tech: ['JavaScript', 'MongoDB','Node js','Express js','RESTfull APIs','passport','express-session & cookies','Mapmy India','Cloudinary','BootStrap'],
-    github: 'https://github.com/yourusername/project1',
+    github: 'https://github.com/Atulkhiyani0909/Wanderlust-project',
     live: 'https://wanderlust-kdst.onrender.com/listings'
   },
   {
@@ -18,7 +18,7 @@ const projects = [
     description: 'MailPlanner is an efficient bulk email scheduling tool that allows users to send personalized emails at specified times. Utilizing Nodemailer and Cron Jobs, MailPlanner automates the process of sending emails with precision. Additionally, the platform integrates AI to generate engaging and professional email content, making it perfect for both personal and professional communication.',
     image:mailplanner ,
     tech: ['Nodemailer','Cron jobs','Cloudinary','passport','JavaScript','express-sessions & cookies', 'MongoDB', 'Google Gemini API'],
-    github: 'https://github.com/yourusername/project2',
+    github: 'https://github.com/Atulkhiyani0909/MailPlanner',
     live: 'https://mailplanner.onrender.com/login'
   },
   {
@@ -26,8 +26,8 @@ const projects = [
     description: 'Video Application is a YouTube-like platform that prioritizes backend efficiency and security. Built using the MVC pattern, it leverages MongoDB aggregation pipelines for advanced data processing—handling filtering, sorting, and pagination (with limit and skip). The backend adheres to industry standards with JWT-based authentication, including session management, access tokens, and refresh tokens for secure and persistent logins',
     image: videoapp,
     tech: ['JWT','Pagination','Aggregation pipelines','MongoDB','MVC model','JavaScript','RESTfull APIs','Cloudinary','express-validator','Cookies','React'],
-    github: 'https://github.com/yourusername/project3',
-    live: 'https://project3.example.com'
+    github: 'https://github.com/Atulkhiyani0909/Backend_Project',
+    live: 'https://github.com/Atulkhiyani0909/Backend_Project'
   }
 ];
 
