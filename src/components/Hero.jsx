@@ -2,6 +2,7 @@ import React from 'react';
 import { Github, Linkedin, Mail, Download } from 'lucide-react';
 import Typewriter from 'typewriter-effect';
 import me from '../components/me.jpg'
+import resume from '../components/resume.pdf'
 
 export default function Hero() {
   return (
@@ -54,7 +55,7 @@ export default function Hero() {
               Email Me
             </a>
             <a
-              href=""
+              href={resume}
               download
               className="flex items-center px-6 py-3 rounded-full bg-green-600 hover:bg-green-700 text-white transition-all hover:scale-105"
             >
